@@ -55,22 +55,22 @@
   <style>
     /* Custom scrollbar & glass styling */
     ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #ecfdf5; }
-    ::-webkit-scrollbar-thumb { background: #a7f3d0; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #6ee7b7; }
-    /* Fresh green page background */
-    body {
-      background-color: #ecfdf3;
-      background-image:
-        radial-gradient(circle at 0% 0%, rgba(187, 247, 208, 0.75) 0%, rgba(187, 247, 208, 0) 45%),
-        radial-gradient(circle at 100% 100%, rgba(167, 243, 208, 0.6) 0%, rgba(167, 243, 208, 0) 50%),
-        linear-gradient(160deg, #f0fdf4 0%, #e6f9ee 50%, #dcfce7 100%);
-      background-attachment: fixed;
-    }
+    ::-webkit-scrollbar-track { background: #f5f3ff; }
+    ::-webkit-scrollbar-thumb { background: #ddd6fe; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #c4b5fd; }
+    /* Soft lavender page background */
+body {
+  background-color: #f5f0ff;
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(221, 214, 254, 0.75) 0%, rgba(221, 214, 254, 0) 45%),
+    radial-gradient(circle at 100% 100%, rgba(233, 213, 255, 0.6) 0%, rgba(233, 213, 255, 0) 50%),
+    linear-gradient(160deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%);
+  background-attachment: fixed;
+}
     .glass-card {
       background: rgba(255, 255, 255, 0.88);
       backdrop-filter: blur(12px);
-      border: 1px solid rgba(187, 247, 208, 0.9);
+      border: 1px solid rgba(221, 214, 254, 0.9);
     }
     .scanner-overlay {
       background: linear-gradient(180deg, rgba(34, 197, 94, 0) 0%, rgba(34, 197, 94, 0.25) 50%, rgba(34, 197, 94, 0.7) 100%);
@@ -80,7 +80,7 @@
 <body class="text-slate-800 font-sans antialiased min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
 
   <!-- Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-emerald-50/85 backdrop-blur-md border-b border-brand-200">
+  <header class="sticky top-0 z-40 bg-violet-50/85 backdrop-blur-md border-b border-violet-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
